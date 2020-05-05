@@ -536,7 +536,7 @@ class(telecom$truck)
 #Refer to Specific Location of the customer , usually indication city
 summary(telecom$csa)
 telecom%>%group_by(fct_explicit_na(csa))%>%summarise(n=sum(churn),N=n(),churn_perc=round(n/N,4))->data_csa
-class(telecom$csa) #Many Levels Showing less than 5% churn rate
+class(telecom$csa) #Many Levels Showing less than 50% churn rate
 #and having high levels may show insignificant nature during model running
 
 #now those categorical variable which do not have factor nature 
