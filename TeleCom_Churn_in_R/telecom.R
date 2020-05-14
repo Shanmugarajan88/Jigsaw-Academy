@@ -990,7 +990,7 @@ summary(model5)
 plot(model5) #Plotting the model 
 ######################################################################################3
 #MODEL VALIDATION
-#Model 5 is the best model we have got till now with aic 44964
+#Model 5 is the best model we have got till now with aic 44812
 sum(testing$churn) #<- 4270
 sum(training$churn) #<-9992
 
